@@ -6,15 +6,16 @@
 
     <div>
       <div>
-        <a href="<%= movies_path>">
-          Go back
-        </a>
+      <%= link_to "Go back", movies_path%>
+    
       </div>
 
       <div>
-        <a href="<%= edit_movie_path(@the_movie.id) %>">
+      <%= link_to "Edit Movie", edit_movie_path(@the_movie) %>
+        
+       <!-- <a href="<%= edit_movie_path(@the_movie.id) %>">
           Edit Movie
-        </a>
+        </a> -->
       </div>
 
       <div>
